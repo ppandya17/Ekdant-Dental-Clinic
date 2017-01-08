@@ -18,7 +18,7 @@
     <!--[if lt IE 9]>
     <script src="{{url_for('static', filename='js/html5shiv.js')}}"></script>
     <script src="{{url_for('static', filename='js/respond.min.js')}}"></script>
-    <![endif]-->       
+    <![endif]-->
     <link rel="shortcut icon" href="{{url_for('static', filename='images/ico/favicon.ico')}}">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{url_for('static', filename='images/ico/apple-touch-icon-144-precomposed.png')}}">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{url_for('static', filename='images/ico/apple-touch-icon-114-precomposed.png')}}">
@@ -979,13 +979,13 @@
                             <h3>Contact Info</h3>
 
                             <address>
-                              <strong>Twitter, Inc.</strong><br>
+                              <strong>Ekdant Dental Clinic</strong><br>
                               795 Folsom Ave, Suite 600<br>
                               San Francisco, CA 94107<br>
                               <abbr title="Phone">P:</abbr> (123) 456-7890
                             </address>
 
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                            <form id="main-contact-form" name="contact-form" method="post" >
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" placeholder="Name" required>
                                 </div>
@@ -1031,9 +1031,12 @@
         </div>
     </footer><!--/#footer-->
 
+    <script type=text/javascript>
+        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
     <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
     <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHTTAWac2LnroZKcYDY5MdpitJNSVHT1s"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHTTAWac2LnroZKcYDY5MdpitJNSVHT1s&sensor=true"></script>
     <script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/mousescroll.js')}}"></script>
     <script src="{{url_for('static', filename='js/smoothscroll.js')}}"></script>

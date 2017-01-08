@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Ekdant-Dental-Clinic.iml" filepath="$PROJECT_DIR$/.idea/Ekdant-Dental-Clinic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PyCharm.iml" filepath="$PROJECT_DIR$/.idea/PyCharm.iml" />
     </modules>
   </component>
 </project>
