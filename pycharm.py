@@ -9,14 +9,12 @@ def hello_world():
 
 
 @app.route('/sendmail')
-def addRegion():
+def sendMail():
     import smtplib
     name = request.args.get('nameValue')
     email = request.args.get('emailValue')
     message = request.args.get('messageValue')
     subject = request.args.get('subjectValue')
-
-
 
     gmail_user = "PSPandya2009@gmail.com"
     gmail_pwd = "espire2Stevens#"

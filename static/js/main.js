@@ -17,6 +17,8 @@ jQuery(function($) {'use strict';
 		var winTop      =   $(window).scrollTop();
 		var rangeTop    =   200;
 		var rangeBottom =   500;
+
+
 		$('.navbar-collapse').find('.scroll a').each(function(){
 			contentTop.push( $( $(this).attr('href') ).offset().top);
 			contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
@@ -28,6 +30,7 @@ jQuery(function($) {'use strict';
 				.eq(i).addClass('active');			
 			}
 		})
+
 	};
 
 	$('#tohash').on('click', function(){
@@ -226,7 +229,7 @@ jQuery(function($) {'use strict';
 		var myLatlng = new google.maps.LatLng(latitude,longitude);
 		var mapOptions = {
 			zoom: 14,
-			scrollwheel: false,
+			scrollwheel: true,
 			center: myLatlng
 		};
 		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
