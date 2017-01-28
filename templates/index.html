@@ -15,6 +15,8 @@
     <link href="{{url_for('static', filename='css/prettyPhoto.css')}}" rel="stylesheet">
     <link href="{{url_for('static', filename='css/main.css')}}" rel="stylesheet">
     <link href="{{url_for('static', filename='css/responsive.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/bootstrap-datepicker.standalone.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/jquery.timepicker.css')}}" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="{{url_for('static', filename='js/html5shiv.js')}}"></script>
     <script src="{{url_for('static', filename='js/respond.min.js')}}"></script>
@@ -780,34 +782,38 @@
 
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Appointment</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p class="text-center wow fadeInDown">You can book your appointment just now.<br> </p>
             </div>
             <div class="row">
-                <div class="col-sm-6  col-md-4 wow fadeInDown">
-                    <input type="text" id="patientName" placeholder="Name" class="patientName"></input>
+            <div class="row">
+                <div class="row">
+                    <div class="col-sm-6  col-md-6 wow fadeInDown">
+                        <input type="text" id="patientName" placeholder="Name" class="patientName"/>
+                    </div>
+
+                    <div class="col-sm-6  col-md-6 wow fadeInDown">
+                        <input type="phone" id="patientPhone" placeholder="Phone" class="patientPhone"/>
+                    </div>
+
+                    <div class="col-sm-6  col-md-6 wow fadeInDown">
+                        <input type="text" id="appointmentDate" PLACEHOLDER="Date"  class="appointmentDate"/>
+                    </div>
+
+                    <div class="col-sm-6  col-md-6 wow fadeInDown">
+                        <input type="text" id="appointmentTime" placeholder="Time" class="appointmentTime" />
+                    </div>
                 </div>
 
-                <div class="col-sm-6  col-md-4 wow fadeInDown">
-                    <input type="phone" id="patientPhone" placeholder="Phone" class="patientPhone"></input>
-                </div>
 
-                <div class="col-sm-6  col-md-4 wow fadeInDown">
-                    <input type="email" id="patientMail" placeholder="Mail Address" class="patientMail"></input>
-                </div>
-
-                <div class="col-sm-6  col-md-4 wow fadeInDown">
-                    <input type="date" id="appointmentDate"  class="appointmentMail"></input>
-                </div>
-
-                <div class="col-sm-6  col-md-4 wow fadeInDown">
-                    <input type="date" id="appointmentDate" class="appointmentMail"></input>
-                </div>
-
-                <div class="col-sm-6  col-md-4 wow fadeInDown">
-                    <input type="range" id="appointmentRange" class="appointmentRange"></input>
+                <div class="col-sm-8 col-md-12 wow fadeInDown">
+                    <input type="button" value="Make an Appointment"  class="appointmentBook"  />
                 </div>
 
                 </div>
+                <div class="col-sm-4  col-md-4 wow fadeInDown">
+                    <input type="text" id="appointmentMessage" placeholder="Your Message" class="appointmentMessage" rows="10" cols="25"/>
+                </div>
+
             </div>
         </div>
     </section><!--/#appointment-->
@@ -987,6 +993,8 @@
     <script src="{{url_for('static', filename='js/jquery.isotope.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/jquery.inview.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/bootstrap-datepicker.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery.timepicker.js')}}"></script>
     <script src="{{url_for('static', filename='js/main.js')}}"></script>
 </body>
 </html>

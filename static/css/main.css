@@ -575,6 +575,57 @@ ul.nostyle i {
 #appointment h3 {
   margin-bottom: 50px;
 }
+
+.patientName {
+  background: url("../images/appointment/user.png") left no-repeat;
+  background-size: contain;
+  height: 30px;
+  padding-left: 40px;
+  color: grey;
+  width: 200px;
+  border: none;
+}
+
+.patientPhone {
+  background: url("../images/appointment/phone.png") left no-repeat;
+  background-size: contain;
+  height: 30px;
+  padding-left: 40px;
+  color: grey;
+  width: 200px;
+  border: none;
+}
+
+.patientMail {
+  background: url("../images/appointment/mail.png") left no-repeat;
+  background-size: contain;
+  height: 30px;
+  padding-left: 40px;
+  color: grey;
+  width: 200px;
+  border: none;
+}
+
+.appointmentDate {
+  background: url("../images/appointment/calendar.png") left no-repeat;
+  background-size: contain;
+  height: 30px;
+  padding-left: 40px;
+  color: grey;
+  width: 200px;
+  border: none;
+}
+
+.appointmentTime {
+  background: url("../images/appointment/time.png") left no-repeat;
+  background-size: contain;
+  height: 30px;
+  padding-left: 40px;
+  color: grey;
+  width: 200px;
+  border: none;
+}
+
 #meet-team {
   padding: 100px 0;
 }

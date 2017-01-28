@@ -47,6 +47,31 @@ jQuery(function($) {'use strict';
 	 	$(this).closest('.panel-heading').toggleClass('active');
 	});
 
+	$('#appointmentDate').datepicker({
+    		todayBtn: "linked",
+    		multidate: false,
+    		daysOfWeekHighlighted: "0",
+    		autoclose: true,
+    		todayHighlight: true,
+    		beforeShowMonth: function (date){
+                  	if (date.getMonth() == 8) {
+                    	return false;
+                  	}
+			},
+    		toggleActive: true
+		});
+
+	$('.appointmentTime').timepicker({
+    	timeFormat: 'h:mm p',
+    	interval: 30,
+    	minTime: '10',
+    	maxTime: '7:00pm',
+    	startTime: '10:00',
+    	dynamic: false,
+    	dropdown: true,
+    	scrollbar: true
+	});
+
 	//Slider
 	$(document).ready(function() {
 		var time = 7; // time in seconds
@@ -129,6 +154,8 @@ jQuery(function($) {'use strict';
 	      //start again
 	      start();
 	    }
+
+
 	});
 
 	//Initiat WOW JS
