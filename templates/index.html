@@ -779,42 +779,46 @@
 
     <section id="appointment">
         <div class="container">
+        <form class="appointmentForm" id="appointmentForm" name="appointmentForm" method="post">
+
 
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Appointment</h2>
                 <p class="text-center wow fadeInDown">You can book your appointment just now.<br> </p>
             </div>
-            <div class="row">
-            <div class="row">
-                <div class="row">
+            <div class="row" >
+
+                <div class="col-sm-8 col-md-8">
                     <div class="col-sm-6  col-md-6 wow fadeInDown">
-                        <input type="text" id="patientName" placeholder="Name" class="patientName"/>
+                        <input type="text" id="patientName" placeholder="Name" class="patientName appointment"/>
                     </div>
 
                     <div class="col-sm-6  col-md-6 wow fadeInDown">
-                        <input type="phone" id="patientPhone" placeholder="Phone" class="patientPhone"/>
+                        <input type="phone" id="patientPhone" placeholder="Phone" class="patientPhone appointment"/>
                     </div>
 
                     <div class="col-sm-6  col-md-6 wow fadeInDown">
-                        <input type="text" id="appointmentDate" PLACEHOLDER="Date"  class="appointmentDate"/>
+                        <input type="text" id="appointmentDate" PLACEHOLDER="Date"  class="appointmentDate appointment"/>
                     </div>
 
                     <div class="col-sm-6  col-md-6 wow fadeInDown">
-                        <input type="text" id="appointmentTime" placeholder="Time" class="appointmentTime" />
+                        <input type="text" id="appointmentTime" placeholder="Time" class="appointmentTime appointment" />
                     </div>
                 </div>
+
+
+                 <div class="col-sm-4  col-md-4 wow fadeInDown">
+                    <textarea class="patientMessage" placeholder="Your Message" id="patientMessage" rows="5" cols="40"></textarea>
+                 </div>
 
 
                 <div class="col-sm-8 col-md-12 wow fadeInDown">
-                    <input type="button" value="Make an Appointment"  class="appointmentBook"  />
+                    <input type="button" value="Make an Appointment"  class="appointmentBook appointment btn btn-primary btn-lg"/>
                 </div>
 
-                </div>
-                <div class="col-sm-4  col-md-4 wow fadeInDown">
-                    <input type="text" id="appointmentMessage" placeholder="Your Message" class="appointmentMessage" rows="10" cols="25"/>
-                </div>
 
             </div>
+        </form>
         </div>
     </section><!--/#appointment-->
 <!--

@@ -580,9 +580,9 @@ ul.nostyle i {
   background: url("../images/appointment/user.png") left no-repeat;
   background-size: contain;
   height: 30px;
-  padding-left: 40px;
+  padding: 23px 49px 20px 55px !important;
   color: grey;
-  width: 200px;
+  width: 100%;
   border: none;
 }
 
@@ -590,9 +590,9 @@ ul.nostyle i {
   background: url("../images/appointment/phone.png") left no-repeat;
   background-size: contain;
   height: 30px;
-  padding-left: 40px;
+  padding: 23px 49px 20px 55px !important;
   color: grey;
-  width: 200px;
+  width: 100%;
   border: none;
 }
 
@@ -600,9 +600,9 @@ ul.nostyle i {
   background: url("../images/appointment/mail.png") left no-repeat;
   background-size: contain;
   height: 30px;
-  padding-left: 40px;
+  padding: 23px 49px 20px 55px !important;
   color: grey;
-  width: 200px;
+  width: 100%;
   border: none;
 }
 
@@ -610,9 +610,9 @@ ul.nostyle i {
   background: url("../images/appointment/calendar.png") left no-repeat;
   background-size: contain;
   height: 30px;
-  padding-left: 40px;
+  padding: 23px 49px 20px 55px !important;
   color: grey;
-  width: 200px;
+  width: 100%;
   border: none;
 }
 
@@ -620,10 +620,22 @@ ul.nostyle i {
   background: url("../images/appointment/time.png") left no-repeat;
   background-size: contain;
   height: 30px;
-  padding-left: 40px;
+  padding: 23px 49px 20px 55px !important;
   color: grey;
-  width: 200px;
+  width: 100%;
   border: none;
+}
+
+.patientMessage{
+    border: none;
+    color: grey;
+    padding: 8px 5px 5px 10px;
+}
+
+.appointment{
+    margin-bottom: 30px;
+    padding: 14px 50px 12px 40px;
+
 }
 
 #meet-team {

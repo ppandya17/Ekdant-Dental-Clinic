@@ -7,6 +7,9 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
+@app.route('/appointment')
+def appointmentBook():
+    return jsonify("done")
 
 @app.route('/sendmail')
 def sendMail():

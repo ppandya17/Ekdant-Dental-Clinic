@@ -244,6 +244,24 @@ jQuery(function($) {'use strict';
 		});
 	});
 
+	var appointmentForm = $('#appointmentForm');
+	appointmentForm.submit(function(event){
+		event.preventDefault();
+		var appointmentform_status = $('<div class="form_status"></div>');
+		$.ajax({
+			type: "POST",
+			url: $SCRIPT_ROOT + "/appointment",
+			contentType: "application/json; charset=utf-8",
+			data: { },
+			beforeSend: function(){
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Booking Appointment...</p>').fadeIn() );
+			}
+		}).done(function(data){
+
+			appointmentform_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+		});
+	});
+
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
