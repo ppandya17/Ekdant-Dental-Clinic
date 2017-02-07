@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+import pymongo
 
 app = Flask(__name__)
 
@@ -9,6 +10,15 @@ def hello_world():
 
 @app.route('/appointment')
 def appointmentBook():
+    client = pymongo.MongoClient()
+    db = client.Appointment
+    db.sites.insert({
+        "Name": request.args.get('nameValue'),
+        "phone": request.args.get('phoneValue'),
+        "message": request.args.get('messageValue'),
+        "date": request.args.get('dateValue'),
+        "time": request.args.get('timeValue'),
+    })
     return jsonify("done")
 
 @app.route('/sendmail')
@@ -18,6 +28,9 @@ def sendMail():
     email = request.args.get('emailValue')
     message = request.args.get('messageValue')
     subject = request.args.get('subjectValue')
+
+    #For inserting into database
+    insertDatainDatabase(name, email, message, subject)
 
     gmail_user = "PSPandya2009@gmail.com"
     gmail_pwd = "espire2Stevens#"
@@ -42,6 +55,16 @@ def sendMail():
         print
         str(e)
     return jsonify("done")
+
+def insertDatainDatabase(name, email, message, subject):
+    client = pymongo.MongoClient()
+    db = client.ContactEnquiry
+    db.sites.insert({
+        "Name":name,
+        "email":email,
+        "message":message,
+        "subject":subject
+    })
 
 if __name__ == '__main__':
     app.run(debug=True, use_debugger=False, use_reloader=False)

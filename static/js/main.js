@@ -252,7 +252,11 @@ jQuery(function($) {'use strict';
 			type: "POST",
 			url: $SCRIPT_ROOT + "/appointment",
 			contentType: "application/json; charset=utf-8",
-			data: { },
+			data: { nameValue: $('input[id="patientName"]').val(),
+					phoneValue: $('input[id="patientPhone"]').val(),
+					dateValue: $('input[name="appointmentDate"]').val(),
+					timeValue: $('input[name="appointmentTime"]').val(),
+					messageValue: $('textarea[name="patientMessage"]').val()},
 			beforeSend: function(){
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Booking Appointment...</p>').fadeIn() );
 			}
