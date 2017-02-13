@@ -47,6 +47,31 @@ jQuery(function($) {'use strict';
 	 	$(this).closest('.panel-heading').toggleClass('active');
 	});
 
+	$('#appointmentDate').datepicker({
+    		todayBtn: "linked",
+    		multidate: false,
+    		daysOfWeekHighlighted: "0",
+    		autoclose: true,
+    		todayHighlight: true,
+    		beforeShowMonth: function (date){
+                  	if (date.getMonth() == 8) {
+                    	return false;
+                  	}
+			},
+    		toggleActive: true
+		});
+
+	$('.appointmentTime').timepicker({
+    	timeFormat: 'h:mm p',
+    	interval: 30,
+    	minTime: '10',
+    	maxTime: '7:00pm',
+    	startTime: '10:00',
+    	dynamic: false,
+    	dropdown: true,
+    	scrollbar: true
+	});
+
 	//Slider
 	$(document).ready(function() {
 		var time = 7; // time in seconds
@@ -129,6 +154,8 @@ jQuery(function($) {'use strict';
 	      //start again
 	      start();
 	    }
+
+
 	});
 
 	//Initiat WOW JS
@@ -214,6 +241,28 @@ jQuery(function($) {'use strict';
 		}).done(function(data){
 
 			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+		});
+	});
+
+
+	form.find($("#appointmentBook")).click(function(event){
+		event.preventDefault();
+		var appointmentform_status = $('<div class="form_status"></div>');
+		$.ajax({
+			type: "GET",
+			url: $SCRIPT_ROOT + "/appointment",
+			contentType: "application/json; charset=utf-8",
+			data: { appointmentName: $('input[id="patientName"]').val(),
+					appointmentPhone: $('input[id="patientPhone"]').val(),
+					appointmentDate: $('input[name="appointmentDate"]').val(),
+					timeValue: $('input[name="appointmentTime"]').val(),
+					messageValue: $('textarea[name="patientMessage"]').val()},
+			beforeSend: function(){
+				$("#appointmentBook").prepend( appointmentform_status.html('<p><i class="fa fa-spinner fa-spin"></i> Booking Appointment...</p>').fadeIn() );
+			}
+		}).done(function(data){
+
+			appointmentform_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
 		});
 	});
 

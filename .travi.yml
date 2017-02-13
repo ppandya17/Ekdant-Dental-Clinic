@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install coveralls
+  - pip install coverage       # Add me to install coverage.py
+script:
+  PyCharm.py
+after_success:
+  - coveralls
