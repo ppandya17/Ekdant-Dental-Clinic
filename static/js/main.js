@@ -244,21 +244,21 @@ jQuery(function($) {'use strict';
 		});
 	});
 
-	var appointmentForm = $('#appointmentForm');
-	appointmentForm.submit(function(event){
+
+	form.find($("#appointmentBook")).click(function(event){
 		event.preventDefault();
 		var appointmentform_status = $('<div class="form_status"></div>');
 		$.ajax({
-			type: "POST",
+			type: "GET",
 			url: $SCRIPT_ROOT + "/appointment",
 			contentType: "application/json; charset=utf-8",
-			data: { nameValue: $('input[id="patientName"]').val(),
-					phoneValue: $('input[id="patientPhone"]').val(),
-					dateValue: $('input[name="appointmentDate"]').val(),
+			data: { appointmentName: $('input[id="patientName"]').val(),
+					appointmentPhone: $('input[id="patientPhone"]').val(),
+					appointmentDate: $('input[name="appointmentDate"]').val(),
 					timeValue: $('input[name="appointmentTime"]').val(),
 					messageValue: $('textarea[name="patientMessage"]').val()},
 			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Booking Appointment...</p>').fadeIn() );
+				$("#appointmentBook").prepend( appointmentform_status.html('<p><i class="fa fa-spinner fa-spin"></i> Booking Appointment...</p>').fadeIn() );
 			}
 		}).done(function(data){
 

@@ -66,11 +66,11 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="carousel-content">
+{#                                <div class="carousel-content">
                                     <h2><span>Multi</span> is the best Onepage html template</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
                                     <a class="btn btn-primary btn-lg" href="#">Read More</a>
-                                </div>
+                                </div>#}
                             </div>
                         </div>
                     </div>
@@ -81,11 +81,11 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h2>Beautifully designed <span>free</span> one page template</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
-                                    <!--<a class="btn btn-primary btn-lg" href="#">Read More</a>-->
-                                </div>
+{#                                <div class="carousel-content">#}
+{#                                    <h2>Beautifully designed <span>free</span> one page template</h2>#}
+{#                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>#}
+{#                                    <!--<a class="btn btn-primary btn-lg" href="#">Read More</a>-->#}
+{#                                </div>#}
                             </div>
                         </div>
                     </div>
@@ -98,31 +98,22 @@
     <section id="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Awesome Features</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown">Our Advantages</h2>
+                <p class="text-center wow fadeInDown"> When patient choose our hospital, he get every advantage that are available to them. <br> </p>
             </div>
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
                     <img class="img-responsive" src="{{url_for('static', filename='images/main-feature.png')}}" alt="">
                 </div>
                 <div class="col-sm-6">
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-line-chart"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">UX design</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                        </div>
-                    </div>
 
                     <div class="media service-box wow fadeInRight">
                         <div class="pull-left">
                             <i class="fa fa-cubes"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">UI design</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading">Using Latest Technology</h4>
+                            <p>We have nurtured our clinic to provide world class cutting edge facility for treating your dental ailments with advanced dentistry.</p>
                         </div>
                     </div>
 
@@ -131,18 +122,18 @@
                             <i class="fa fa-pie-chart"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">SEO Services</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading">Success Guaranteed</h4>
+                            <p>All of our treatments are coverd by a guaranty of a Doctor who is serving to the patients for last 25 years.</p>
                         </div>
                     </div>
 
                     <div class="media service-box wow fadeInRight">
                         <div class="pull-left">
-                            <i class="fa fa-pie-chart"></i>
+                            <i class="fa fa-line-chart"></i>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">SEO Services</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <h4 class="media-heading">Certified Doctors</h4>
+                            <p>Our Doctors are well certified and expertised in dental treatments with over 20 years of experience.</p>
                         </div>
                     </div>
                 </div>
@@ -154,37 +145,39 @@
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Our Services</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown">Success Stories</h2>
+                <p class="text-center wow fadeInDown">At Ekdanta Dental Clinic, our experienced team is dedicated to provide outmost care helping you restore the natural beauty of your smile, <br>while educating you about the different procedures necessary so you can make an informed decision.</p>
             </div>
 
             <div class="row">
                 <div class="features">
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box">
-                            <a class="preview" href="{{url_for('static', filename='images/portfolio/scaling/IMG_1922.png')}}" rel="prettyPhoto">
-                                <div class="pull-left">
-                                    <i class="fa fa-line-chart"></i>
-                                </div>
-                            </a>
-                            <div class="media-body">
-                                <h4 class="media-heading">UX design</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+            <div class="media service-box">
+                <a class="preview" href="{{url_for('static', filename='images/portfolio/scaling/IMG_1922.png')}}" rel="prettyPhoto">
+                    <div class="pull-left">
+                        <i class="fa fa-line-chart"></i>
+                    </div>
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">Cosmetic Treatment</h4>
+                    <p>A cosmetic dentistry offers you treatments for fixing a variety of dental flaws from crooked teeth to gaps, cracks or stains.</p>
+                </div>
+            </div>
+        </div><!--/.col-md-4-->
+
 
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-cubes"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">UI design</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+            <div class="media service-box">
+                <div class="pull-left">
+                    <i class="fa fa-cubes"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Smile Design</h4>
+                    <p>A smile makeover can be as simple as a high-powered professional teeth whitening session.</p>
+                </div>
+            </div>
+        </div><!--/.col-md-4-->
+
 
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
                         <div class="media service-box">
@@ -192,47 +185,48 @@
                                 <i class="fa fa-pie-chart"></i>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">SEO Services</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                                <h4 class="media-heading">Teath Allignment</h4>
+                                <p>If you have a tooth that’s chipped or not in line, our specialized dentist can easily fix it within couple of minutes</p>
                             </div>
                         </div>
                     </div><!--/.col-md-4-->
                 
                     <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bar-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">iOS App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+            <div class="media service-box">
+                <div class="pull-left">
+                    <i class="fa fa-bar-chart"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Scalling</h4>
+                    <p>Professional dental cleanings are a procedure for removing plaque, tartar and stains from the teeth. Scalling is an important tool in maintaining oral health</p>
+                </div>
+            </div>
+        </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-language"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Android App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+            <div class="media service-box">
+                <div class="pull-left">
+                    <i class="fa fa-language"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Root Canal</h4>
+                    <p>Damaged teeth used to be extracted, but these days, many decaying teeth can be saved through a root canal</p>
+                </div>
+            </div>
+        </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bullseye"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Win App</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+        <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+            <div class="media service-box">
+                <div class="pull-left">
+                    <i class="fa fa-bullseye"></i>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Bridges</h4>
+                    <p>The dental bridge consists of one or more false teeth that are placed between two natural or implant teeth</p>
+                </div>
+            </div>
+        </div><!--/.col-md-4-->
+
                 </div>
             </div><!--/.row-->    
         </div><!--/.container-->
@@ -776,10 +770,10 @@
             </div>
         </div>
     </section><!--/#testimonial-->
-
+<form id="main-contact-form" name="contact-form" method="POST" >
     <section id="appointment">
         <div class="container">
-        <form class="appointmentForm" id="appointmentForm" name="appointmentForm" method="post">
+
 
 
             <div class="section-header">
@@ -813,12 +807,12 @@
 
 
                 <div class="col-sm-8 col-md-12 wow fadeInDown">
-                    <input type="button" value="Make an Appointment"  class="appointmentBook appointment btn btn-primary btn-lg"/>
+                    <input type="button" value="Make an Appointment" id="appointmentBook" class="appointmentBook appointment btn btn-primary btn-lg"/>
                 </div>
 
 
             </div>
-        </form>
+
         </div>
     </section><!--/#appointment-->
 <!--
@@ -938,7 +932,7 @@
                               <abbr title="Phone">P:</abbr> (123) 456-7890
                             </address>
 
-                            <form id="main-contact-form" name="contact-form" method="post" >
+
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" placeholder="Name" required>
                                 </div>
@@ -952,14 +946,14 @@
                                     <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section><!--/#bottom-->
-
+</form>
     <footer id="footer">
         <div class="container">
             <div class="row">

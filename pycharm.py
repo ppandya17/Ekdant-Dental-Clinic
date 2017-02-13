@@ -10,14 +10,21 @@ def hello_world():
 
 @app.route('/appointment')
 def appointmentBook():
+    Name = request.args.get('appointmentName')
+    phone = request.args.get('appointmentPhone')
+    message = request.args.get('appointmentMessage')
+    date = request.args.get('appointmentDate')
+    time = request.args.get('timeValue')
+
+
     client = pymongo.MongoClient()
     db = client.Appointment
     db.sites.insert({
-        "Name": request.args.get('nameValue'),
-        "phone": request.args.get('phoneValue'),
-        "message": request.args.get('messageValue'),
-        "date": request.args.get('dateValue'),
-        "time": request.args.get('timeValue'),
+        "Name": Name,
+        "phone": phone,
+        "message": message,
+        "date": date,
+        "time": time
     })
     return jsonify("done")
 
