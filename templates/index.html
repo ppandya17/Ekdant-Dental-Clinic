@@ -17,6 +17,7 @@
     <link href="{{url_for('static', filename='css/responsive.css')}}" rel="stylesheet">
     <link href="{{url_for('static', filename='css/bootstrap-datepicker.standalone.css')}}" rel="stylesheet">
     <link href="{{url_for('static', filename='css/jquery.timepicker.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/smoothDivScroll.css')}}" rel="Stylesheet" type="text/css" />
     <!--[if lt IE 9]>
     <script src="{{url_for('static', filename='js/html5shiv.js')}}"></script>
     <script src="{{url_for('static', filename='js/respond.min.js')}}"></script>
@@ -26,6 +27,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{url_for('static', filename='images/ico/apple-touch-icon-114-precomposed.png')}}">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{url_for('static', filename='images/ico/apple-touch-icon-72-precomposed.png')}}">
     <link rel="apple-touch-icon-precomposed" href="{{url_for('static', filename='images/ico/apple-touch-icon-57-precomposed.png')}}">
+
+
 </head><!--/head-->
 
 <body id="home" class="homepage">
@@ -236,7 +239,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Our Works</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p class="text-center wow fadeInDown"></p>
             </div>
 
             <div class="text-center">
@@ -244,16 +247,16 @@
                     <li><a class="active" href="#" data-filter="*">All Works</a></li>
                     <li><a href="#" data-filter=".Scalling">Scalling</a></li>
                     <li><a href="#" data-filter=".Bridge">Bridge</a></li>
-                    <li><a href="#" data-filter=".braces_allignment_teeth">Braces & Allignment of the Teeth</a></li>
+{#                    <li><a href="#" data-filter=".braces_allignment_teeth">Braces & Allignment of the Teeth</a></li>#}
                     <li><a href="#" data-filter=".child_treatment">Child Treatment</a></li>
-                    <li><a href="#" data-filter=".Consultation">Consultation</a></li>
+{#                    <li><a href="#" data-filter=".Consultation">Consultation</a></li>#}
                     <li><a href="#" data-filter=".cosmetic_treatment">Cosmetic Treatment</a></li>
-                    <li><a href="#" data-filter=".dentures">dentures</a></li>
-                    <li><a href="#" data-filter=".extraction">Extraction</a></li>
-                    <li><a href="#" data-filter=".implant">implant</a></li>
-                    <li><a href="#" data-filter=".root_anal_treatment">Root Anal Treatment</a></li>
+{#                    <li><a href="#" data-filter=".dentures">dentures</a></li>#}
+{#                    <li><a href="#" data-filter=".extraction">Extraction</a></li>#}
+                    <li><a href="#" data-filter=".implant">Implant</a></li>
+                    <li><a href="#" data-filter=".root_canal_treatment">Root Canal Treatment</a></li>
                     <li><a href="#" data-filter=".composite_filling">Composite Filling</a></li>
-                    <li><a href="#" data-filter=".dentures">dentures</a></li>
+{#                    <li><a href="#" data-filter=".dentures">dentures</a></li>#}
                 </ul><!--/#portfolio-filter-->
             </div>
 
@@ -282,69 +285,147 @@
 
                 <div class="portfolio-item Bridge">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/bridge/IMG_2137.png')}}" alt="Bridge">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/bridge/IMG_2137.jpg')}}" alt="Bridge">
                         <div class="portfolio-info">
                             <h3>Bridge</h3>
                             Bridge
-                            <a class="preview" href="{{url_for('static', filename='images/portfolio/bridge/IMG_2137.png')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/bridge/IMG_2137.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item Bridge">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/bridge/IMG_2138.png')}}" alt="">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/bridge/IMG_2138.jpg')}}" alt="">
                         <div class="portfolio-info">
                             <h3>Bridge</h3>
                             Bridge
-                            <a class="preview" href="{{url_for('static', filename='images/portfolio/bridge/IMG_2138.png')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/bridge/IMG_2138.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
                 <div class="portfolio-item Bridge">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/bridge/IMG_2166.png')}}" alt="">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/bridge/IMG_2166.jpg')}}" alt="">
                         <div class="portfolio-info">
                             <h3>Bridge</h3>
                             Bridge
-                            <a class="preview" href="{{url_for('static', filename='images/portfolio/bridge/IMG_2166.png')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/bridge/IMG_2166.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item Bridge">
+                <div class="portfolio-item child_treatment">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/bridge/IMG_2167.png')}}" alt="">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/child_treatment/IMG_2175.jpg')}}" alt="">
                         <div class="portfolio-info">
-                            <h3>Bridge</h3>
-                            Bridge
-                            <a class="preview" href="{{url_for('static', filename='images/portfolio/bridge/IMG_2167.png')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <h3>Child Treatment</h3>
+                            Child Treatment
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/child_treatment/IMG_2175.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item creative portfolio">
+               {# <div class="portfolio-item child_treatment">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/07.jpg')}}" alt="">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/child_treatment/IMG_2176.jpg')}}" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 7</h3>
-                            Lorem Ipsum Dolor Sit
-                            <a class="preview" href="{{url_for('static', filename='images/portfolio/full.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <h3>Child Treatment</h3>
+                            Child Treatment
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/child_treatment/IMG_2176.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>#}<!--/.portfolio-item-->
+
+                <div class="portfolio-item cosmetic_treatment">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/cosmetic_treatment/IMG_1927.png')}}" alt="">
+                        <div class="portfolio-info">
+                            <h3>Cosmetic Treatment</h3>
+                            Cosmetic Treatment
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/cosmetic_treatment/IMG_1927.png')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item corporate">
+                <div class="portfolio-item cosmetic_treatment">
                     <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/08.jpg')}}" alt="">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/cosmetic_treatment/IMG_2181.png')}}" alt="">
                         <div class="portfolio-info">
-                            <h3>Portfolio Item 8</h3>
-                            Lorem Ipsum Dolor Sit
-                            <a class="preview" href="{{url_for('static', filename='images/portfolio/full.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                            <h3>Cosmetic Treatment</h3>
+                            Cosmetic Treatment
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/cosmetic_treatment/IMG_2181.png')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item implant">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/implant/img_2141.jpg')}}" alt="">
+                        <div class="portfolio-info">
+                            <h3>Teeth Implant</h3>
+                            Teeth Implant
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/implant/img_2141.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item implant">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/implant/img_2179.png')}}" alt="">
+                        <div class="portfolio-info">
+                            <h3>Teeth Implant</h3>
+                            Teeth Implant
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/implant/img_2179.png')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item root_canal_treatment">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/root canal treatment/img_2134.jpg')}}" alt="">
+                        <div class="portfolio-info">
+                            <h3>Root Canal Treatment</h3>
+                            Root Canal Treatment
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/root canal treatment/img_2134.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item root_canal_treatment">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/root canal treatment/img_2136.png')}}" alt="">
+                        <div class="portfolio-info">
+                            <h3>Root Canal Treatment</h3>
+                            Root Canal Treatment
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/root canal treatment/img_2136.png')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item composite_filling">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/composite_filling/IMG_1924.gif')}}" alt="">
+                        <div class="portfolio-info">
+                            <h3>Composite Filling</h3>
+                            Composite Filling
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/composite_filling/IMG_1924.gif')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
+                <div class="portfolio-item composite_filling">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="{{url_for('static', filename='images/portfolio/composite_filling/IMG_1925.jpg')}}" alt="">
+                        <div class="portfolio-info">
+                            <h3>Composite Filling</h3>
+                            Composite Filling
+                            <a class="preview" href="{{url_for('static', filename='images/portfolio/composite_filling/IMG_1925.jpg')}}" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+
             </div>
         </div><!--/.container-->
     </section><!--/#portfolio-->
@@ -354,54 +435,58 @@
 
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">About Us</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p class="text-center wow fadeInDown">Our Goal remains to fulfil our patient’s expectations and dreams of having a healthy beautiful smile.</p>
             </div>
 
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
-                    <h3 class="column-title">Video Intro</h3>
+                    <h3 class="column-title">Photos</h3>
                     <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="//player.vimeo.com/video/58093852?title=0&amp;byline=0&amp;portrait=0&amp;color=e79b39" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div>
+                    <div id="makeMeScrollable">
+                        <img src="{{url_for('static', filename='images/portfolio/braces_allignment_teeth/IMG_2173.png')}}" alt="braces1" id="field" />
+                        <img src="{{url_for('static', filename='images/portfolio/braces_allignment_teeth/IMG_2174.jpg')}}" alt="braces2" id="gnome" />
+                        <img src="{{url_for('static', filename='images/portfolio/cosmetic_treatment/IMG_1927.png')}}" alt="cosmetic1" id="pencils" />
+                        <img src="{{url_for('static', filename='images/portfolio/cosmetic_treatment/IMG_2181.png')}}" alt="cosmetic2" id="golf" />
+                        <img src="{{url_for('static', filename='images/portfolio/cosmetic_treatment/IMG_2182.jpg')}}" alt="cosmetic3" id="river" />
+                        <img src="{{url_for('static', filename='images/portfolio/implant/IMG_2179.jpg')}}" alt="implant1" id="train" />
+                        <img src="{{url_for('static', filename='images/portfolio/child_treatment/IMG_2175.jpg')}}" alt="child Treatment" id="leaf" />
+                        <img src="{{url_for('static', filename='images/portfolio/composite_filling/IMG_1924.gif')}}" alt="composite1" id="dog" />
+	                </div>
                 </div>
 
                 <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">Multi Capability</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <h3 class="column-title">Why Choose Us?</h3>
+                    <p>When properly cared for, your smile can last you a lifetime and beyond. At Ekdanta Dental Clinic, our experienced team is dedicated to provide outmost care helping you restore the natural beauty of your smile, while educating you about the different procedures necessary so you can make an informed decision. </p>
+                    <p>Examining your mouth at the very 1st symptom occurring in your mouth could reverse the issues and leave you with a beautiful smile again. We have nurtured our clinic to provide world class cutting edge facility for treating your dental ailments with advanced dentistry. You will be dazzled by our environment providing you a truly remarkable, relaxing experience while we focus on your dental problems & creating solutions.</p>
 
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+{#                    <div class="row">#}
+{#                        <div class="col-sm-6">#}
+{#                            <ul class="nostyle">#}
+{#                                <li><i class="fa fa-check-square"></i> Ipsum is simply dummy</li>#}
+{#                                <li><i class="fa fa-check-square"></i> When an unknown</li>#}
+{#                            </ul>#}
+{#                        </div>#}
+{##}
+{#                        <div class="col-sm-6">#}
+{#                            <ul class="nostyle">#}
+{#                                <li><i class="fa fa-check-square"></i> The printing and typesetting</li>#}
+{#                                <li><i class="fa fa-check-square"></i> Lorem Ipsum has been</li>#}
+{#                            </ul>#}
+{#                        </div>#}
+{#                    </div>#}
 
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <ul class="nostyle">
-                                <li><i class="fa fa-check-square"></i> Ipsum is simply dummy</li>
-                                <li><i class="fa fa-check-square"></i> When an unknown</li>
-                            </ul>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <ul class="nostyle">
-                                <li><i class="fa fa-check-square"></i> The printing and typesetting</li>
-                                <li><i class="fa fa-check-square"></i> Lorem Ipsum has been</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <a class="btn btn-primary" href="#">Learn More</a>
+{#                     <a class="btn btn-primary" href="#">Learn More</a>#}
 
                 </div>
             </div>
         </div>
     </section><!--/#about-->
 
-
-
     <section id="meet-team">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Meet The Team</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2 class="section-title text-center wow fadeInDown">Meet The Doctors</h2>
+                <p class="text-center wow fadeInDown"></p>
             </div>
 
             <div class="row">
@@ -412,9 +497,9 @@
                         </div>
                         <div class="team-info">
                             <h3>Dr. Salil Bapat</h3>
-                            <span>Co-Founder</span>
+                            <span>M.D.S.</span>
                         </div>
-                        <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                        <p>Vast experience in dental surgery</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -429,10 +514,10 @@
                             <img class="img-responsive" src="{{url_for('static', filename='images/team/02.jpg')}}" alt="">
                         </div>
                         <div class="team-info">
-                            <h3>Jane Man</h3>
-                            <span>Project Manager</span>
+                            <h3>Dr. Kruti Pandya</h3>
+                            <span>B.D.S.</span>
                         </div>
-                        <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                        <p>Well experienced in smile design and root canal treatment</p>
                         <ul class="social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -447,8 +532,8 @@
                             <img class="img-responsive" src="{{url_for('static', filename='images/team/03.jpg')}}" alt="">
                         </div>
                         <div class="team-info">
-                            <h3>Pahlwan</h3>
-                            <span>Designer</span>
+                            <h3>Alex</h3>
+                            <span>M.D.S.</span>
                         </div>
                         <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
                         <ul class="social-icons">
@@ -735,8 +820,7 @@
     <section id="testimonial">
         <div class="container">
             <div class="row">
-
-<div class="col-sm-8 col-sm-offset-2">
+                <div class="col-sm-8 col-sm-offset-2">
                     <div id="carousel-testimonial" class="carousel slide text-center" data-ride="carousel">
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
@@ -773,15 +857,11 @@
 <form id="main-contact-form" name="contact-form" method="POST" >
     <section id="appointment">
         <div class="container">
-
-
-
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Appointment</h2>
                 <p class="text-center wow fadeInDown">You can book your appointment just now.<br> </p>
             </div>
             <div class="row" >
-
                 <div class="col-sm-8 col-md-8">
                     <div class="col-sm-6  col-md-6 wow fadeInDown">
                         <input type="text" id="patientName" placeholder="Name" class="patientName appointment"/>
@@ -799,20 +879,13 @@
                         <input type="text" id="appointmentTime" placeholder="Time" class="appointmentTime appointment" />
                     </div>
                 </div>
-
-
                  <div class="col-sm-4  col-md-4 wow fadeInDown">
                     <textarea class="patientMessage" placeholder="Your Message" id="patientMessage" rows="5" cols="40"></textarea>
                  </div>
-
-
                 <div class="col-sm-8 col-md-12 wow fadeInDown">
                     <input type="button" value="Make an Appointment" id="appointmentBook" class="appointmentBook appointment btn btn-primary btn-lg"/>
                 </div>
-
-
             </div>
-
         </div>
     </section><!--/#appointment-->
 <!--
@@ -915,7 +988,6 @@
         </div>
     </section><!--/#get-in-touch-->
 
-
     <section id="contact">
         <div id="google-map" style="height:650px" data-latitude="20.0056022" data-longitude="73.7672165"></div>
         <div class="container-wrapper">
@@ -927,9 +999,10 @@
 
                             <address>
                               <strong>Ekdant Dental Clinic</strong><br>
-                              795 Folsom Ave, Suite 600<br>
-                              San Francisco, CA 94107<br>
-                              <abbr title="Phone">P:</abbr> (123) 456-7890
+                                Vinay Apartment, Opposite Vadnagre Bhavan,<br>
+                                Thatte nagar, Off College Road,<br>
+                                Nashik, Maharashtra 422005, India <br>
+                              <abbr title="Phone">P:</abbr> +91 94032 62219
                             </address>
 
 
@@ -993,6 +1066,10 @@
     <script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
     <script src="{{url_for('static', filename='js/bootstrap-datepicker.js')}}"></script>
     <script src="{{url_for('static', filename='js/jquery.timepicker.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery-ui-1.10.3.custom.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery.mousewheel.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery.kinetic.min.js')}}" type="text/javascript"></script>
+    <script src="{{url_for('static', filename='js/jquery.smoothdivscroll-1.3-min.js')}}" type="text/javascript"></script>
     <script src="{{url_for('static', filename='js/main.js')}}"></script>
 </body>
 </html>

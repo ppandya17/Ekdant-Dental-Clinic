@@ -190,6 +190,10 @@ jQuery(function($) {'use strict';
 			}
 		});
 
+		$("div#makeMeScrollable").smoothDivScroll({
+			autoScrollingMode: "onStart"
+		});
+
 		//Animated Number
 		$.fn.animateNumbers = function(stop, commas, duration, ease) {
 			return this.each(function() {
