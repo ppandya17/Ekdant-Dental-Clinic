@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d52881e2-f3aa-4d28-b603-e3865bdd95e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/smoothDivScroll.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery-ui-1.10.3.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.kinetic.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.mousewheel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.smoothdivscroll-1.3-min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/portfolio/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/portfolio/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/portfolio/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/portfolio/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/portfolio/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/portfolio/06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/portfolio/07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/portfolio/08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/portfolio/full.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/static/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/main.js" afterPath="$PROJECT_DIR$/static/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/cosmetic treatment/IMG_1927.PNG" afterPath="$PROJECT_DIR$/static/images/portfolio/cosmetic_treatment/IMG_1927.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/cosmetic treatment/IMG_1928.JPG" afterPath="$PROJECT_DIR$/static/images/portfolio/cosmetic_treatment/IMG_1928.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/cosmetic treatment/IMG_1929.PNG" afterPath="$PROJECT_DIR$/static/images/portfolio/cosmetic_treatment/IMG_1929.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/cosmetic treatment/IMG_2181.PNG" afterPath="$PROJECT_DIR$/static/images/portfolio/cosmetic_treatment/IMG_2181.PNG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/cosmetic treatment/IMG_2182.JPG" afterPath="$PROJECT_DIR$/static/images/portfolio/cosmetic_treatment/IMG_2182.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/cosmetic treatment/IMG_2183.JPG" afterPath="$PROJECT_DIR$/static/images/portfolio/cosmetic_treatment/IMG_2183.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/cosmetic treatment/desktop.ini" afterPath="$PROJECT_DIR$/static/images/portfolio/composite_filling/desktop.ini" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/implant/84F3F654-2E1C-45D4-A437-9930A629C209.JPG" afterPath="$PROJECT_DIR$/static/images/portfolio/implant/img_2141.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/tooth colour(composite) filling/IMG_1924.GIF" afterPath="$PROJECT_DIR$/static/images/portfolio/composite_filling/IMG_1924.GIF" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/tooth colour(composite) filling/IMG_1925.JPG" afterPath="$PROJECT_DIR$/static/images/portfolio/composite_filling/IMG_1925.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/tooth colour(composite) filling/IMG_1926.JPG" afterPath="$PROJECT_DIR$/static/images/portfolio/composite_filling/IMG_1926.JPG" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/images/portfolio/tooth colour(composite) filling/desktop.ini" afterPath="$PROJECT_DIR$/static/images/portfolio/cosmetic_treatment/desktop.ini" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +24,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PyCharm$PyCharm.coverage" NAME="PyCharm Coverage Results" MODIFIED="1483852170035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Ekdant-Dental-Clinic$PyCharm.coverage" NAME="PyCharm Coverage Results" MODIFIED="1489437924980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Ekdant-Dental-Clinic$PyCharm.coverage" NAME="PyCharm Coverage Results" MODIFIED="1490372322282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -55,7 +46,7 @@
       <file leaf-file-name="pycharm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pycharm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
+            <state relative-caret-position="559">
               <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
@@ -67,13 +58,23 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="831" column="34" lean-forward="true" selection-start-line="831" selection-start-column="34" selection-end-line="831" selection-end-column="34" />
+            <state relative-caret-position="281">
+              <caret line="839" column="132" lean-forward="false" selection-start-line="839" selection-start-column="132" selection-end-line="839" selection-end-column="132" />
               <folding>
                 <element signature="e#32275#40021#0#HTML" expanded="false" />
                 <element signature="e#40070#42020#0#HTML" expanded="false" />
-                <element signature="e#42021#48171#0#HTML" expanded="false" />
+                <element signature="e#53741#59718#0#HTML" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="546" column="0" lean-forward="true" selection-start-line="546" selection-start-column="0" selection-end-line="546" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,6 +111,12 @@
       <find>work-process</find>
       <find>section</find>
       <find>appoi</find>
+      <find>img-responsive</find>
+      <find>portfolio-item-inner</find>
+      <find>img</find>
+      <find>2179</find>
+      <find>img-thumbnail</find>
+      <find>img-circle</find>
     </findStrings>
     <replaceStrings>
       <replace>appointment</replace>
@@ -160,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -238,7 +244,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
+              <option name="myItemId" value="testimonial" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,46 +262,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="implant" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ekdant-Dental-Clinic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ekdant-Dental-Clinic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="child_treatment" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -582,7 +555,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -614,21 +587,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PyCharm.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PyCharm.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PyCharm.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/static/js/main.js</url>
           <line>252</line>
@@ -923,13 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11084">
-          <caret line="652" column="16" lean-forward="false" selection-start-line="652" selection-start-column="16" selection-end-line="652" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -939,16 +890,6 @@
       </provider>
     </entry>
     <entry file="file://D:/Drive/CS 555/week6/HW06-Refactoring.py" />
-    <entry file="file://$PROJECT_DIR$/pycharm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/images/portfolio/07.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -959,14 +900,32 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pycharm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="39" column="46" lean-forward="false" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="546" column="0" lean-forward="true" selection-start-line="546" selection-start-column="0" selection-end-line="546" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="831" column="34" lean-forward="true" selection-start-line="831" selection-start-column="34" selection-end-line="831" selection-end-column="34" />
+        <state relative-caret-position="281">
+          <caret line="839" column="132" lean-forward="false" selection-start-line="839" selection-start-column="132" selection-end-line="839" selection-end-column="132" />
           <folding>
             <element signature="e#32275#40021#0#HTML" expanded="false" />
             <element signature="e#40070#42020#0#HTML" expanded="false" />
-            <element signature="e#42021#48171#0#HTML" expanded="false" />
+            <element signature="e#53741#59718#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>

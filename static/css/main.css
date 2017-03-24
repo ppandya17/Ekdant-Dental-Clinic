@@ -645,6 +645,11 @@ ul.nostyle i {
   position: relative;
 }
 
+.portfolio-item-inner img
+{
+  width: 261px !important;
+  height: 210px !important;
+}
 
 #makeMeScrollable div.scrollableArea img
 {
