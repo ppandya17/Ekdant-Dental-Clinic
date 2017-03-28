@@ -12,7 +12,7 @@ def hello_world():
 def appointmentBook():
     Name = request.args.get('appointmentName')
     phone = request.args.get('appointmentPhone')
-    message = request.args.get('appointmentMessage')
+    message = request.args.get('messageValue')
     date = request.args.get('appointmentDate')
     time = request.args.get('timeValue')
 

@@ -240,11 +240,11 @@ jQuery(function($) {'use strict';
 					subjectValue: $('input[name="subject"]').val(),
 					messageValue: $('textarea[name="message"]').val()},
 			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+				$('button.btn.btn-primary').before( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
 			}
 		}).done(function(data){
 
-			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+			form_status.html('<p class="text-success">Thank you for contact us. We will contact you as early as possible.</p>');
 		});
 	});
 
@@ -258,15 +258,15 @@ jQuery(function($) {'use strict';
 			contentType: "application/json; charset=utf-8",
 			data: { appointmentName: $('input[id="patientName"]').val(),
 					appointmentPhone: $('input[id="patientPhone"]').val(),
-					appointmentDate: $('input[name="appointmentDate"]').val(),
-					timeValue: $('input[name="appointmentTime"]').val(),
-					messageValue: $('textarea[name="patientMessage"]').val()},
+					appointmentDate: $('input[id="appointmentDate"]').val(),
+					timeValue: $('input[id="appointmentTime"]').val(),
+					messageValue: $('textarea[id="patientMessage"]').val()},
 			beforeSend: function(){
-				$("#appointmentBook").prepend( appointmentform_status.html('<p><i class="fa fa-spinner fa-spin"></i> Booking Appointment...</p>').fadeIn() );
+				$("#appointmentBook").before( appointmentform_status.html('<p><i class="fa fa-spinner fa-spin"></i> Booking Appointment...</p>').fadeIn() );
 			}
 		}).done(function(data){
 
-			appointmentform_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+			appointmentform_status.html('<p class="text-success">Thank you for contact us. Your appointment is booked.</p>');
 		});
 	});
 
