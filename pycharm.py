@@ -26,11 +26,14 @@ def appointmentBook():
         "date": date,
         "time": time
     })
+
+    TEXT = "Appointment booked by "+ Name +" on Date: "+ date +" at time: "+ str(time) +" and message from patient: "+ message +""
+    send_data_to_gmail("Appointment Booked for "+ Name +"", "pspandya2009@gmail.com", TEXT)
     return jsonify("done")
 
 @app.route('/sendmail')
 def sendMail():
-    import smtplib
+
     name = request.args.get('nameValue')
     email = request.args.get('emailValue')
     message = request.args.get('messageValue')
@@ -39,16 +42,45 @@ def sendMail():
     #For inserting into database
     insertDatainDatabase(name, email, message, subject)
 
+    subject_for_mail = "Information about " + subject + ""
+    send_data_to_gmail(subject_for_mail, email, message)
+
+    #gmail_user = "PSPandya2009@gmail.com"
+    #gmail_pwd = "espire2Stevens#"
+    #FROM = gmail_user
+    #TO = email
+
+    #TEXT = message
+
+
+    # Prepare actual message
+    # message = """From: %s\nTo: %s\nSubject: %s\n\n%s
+    #    """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
+    # try:
+    #     server = smtplib.SMTP("smtp.gmail.com", 587)
+    #     server.ehlo()
+    #     server.starttls()
+    #     server.login(gmail_user, gmail_pwd)
+    #     server.sendmail(FROM, TO, message)
+    #     server.close()
+    #     print
+    #     'successfully sent the mail'
+    # except Exception as e:
+    #     print
+    #     str(e)
+    return jsonify("done")
+
+def send_data_to_gmail(subject_for_mail, email, message):
+    import smtplib
     gmail_user = "PSPandya2009@gmail.com"
     gmail_pwd = "espire2Stevens#"
     FROM = gmail_user
     TO = email
-    SUBJECT = "Information about "+ subject+""
+    SUBJECT = subject_for_mail
     TEXT = message
 
-    # Prepare actual message
     message = """From: %s\nTo: %s\nSubject: %s\n\n%s
-       """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
+           """ % (FROM, ", ".join(TO), SUBJECT, TEXT)
     try:
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.ehlo()
@@ -61,7 +93,6 @@ def sendMail():
     except Exception as e:
         print
         str(e)
-    return jsonify("done")
 
 def insertDatainDatabase(name, email, message, subject):
     client = pymongo.MongoClient()
