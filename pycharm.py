@@ -129,5 +129,5 @@ scheduler.add_job(
 atexit.register(lambda: scheduler.shutdown())
 
 if __name__ == '__main__':
-    app.run(debug=True, use_debugger=False, use_reloader=False, host="0.0.0.0", port=5000)
+    app.run(debug=True, use_debugger=False, use_reloader=False, host="0.0.0.0")
 
