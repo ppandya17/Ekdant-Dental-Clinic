@@ -9,7 +9,7 @@ from apscheduler.triggers.interval import IntervalTrigger
 
 app = Flask(__name__)
 
-connection = MongoClient('127.0.0.1',27017)
+connection = MongoClient('0.0.0.0',27015)
 db = connection.test
 
 
@@ -132,5 +132,5 @@ scheduler.add_job(
 atexit.register(lambda: scheduler.shutdown())
 
 if __name__ == '__main__':
-    app.run(debug=True, use_debugger=False, use_reloader=False)
+    app.run(debug=True, use_debugger=False, use_reloader=False, host="0.0.0.0")
 
