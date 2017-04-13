@@ -1,7 +1,13 @@
 from flask import Flask, render_template, request, jsonify
 import pymongo
+import time
+import atexit
+
+from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.triggers.interval import IntervalTrigger
 
 app = Flask(__name__)
+
 
 
 @app.route('/')
@@ -103,6 +109,31 @@ def insertDatainDatabase(name, email, message, subject):
         "message":message,
         "subject":subject
     })
+    return True
+
+
+def appointment_report():
+    client = pymongo.MongoClient()
+    db = client.Appointment
+    db.sites.insert({
+        "Name": Name,
+        "phone": phone,
+        "message": message,
+        "date": date,
+        "time": time
+    })
+    print(time.strftime("%A, %d. %B %Y %I:%M:%S %p"))
+
+scheduler = BackgroundScheduler()
+scheduler.start()
+scheduler.add_job(
+    func=appointment_report,
+    trigger=IntervalTrigger(hours=24),
+    id='printing_job',
+    name='Print date and time every five seconds',
+    replace_existing=True)
+# Shut down the scheduler when exiting the app
+atexit.register(lambda: scheduler.shutdown())
 
 if __name__ == '__main__':
     app.run(debug=True, use_debugger=False, use_reloader=False)
