@@ -2,12 +2,15 @@ from flask import Flask, render_template, request, jsonify
 import pymongo
 import time
 import atexit
-
+from pymongo import MongoClient
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 
+
 app = Flask(__name__)
 
+connection = MongoClient('127.0.0.1',27017)
+db = connection.test
 
 
 @app.route('/')
@@ -23,9 +26,9 @@ def appointmentBook():
     time = request.args.get('timeValue')
 
 
-    client = pymongo.MongoClient()
-    db = client.Appointment
-    db.sites.insert({
+    #client = pymongo.MongoClient()
+    Appointment = db.Appointment
+    Appointment.sites.insert({
         "Name": Name,
         "phone": phone,
         "message": message,
@@ -101,9 +104,9 @@ def send_data_to_gmail(subject_for_mail, email, message):
         str(e)
 
 def insertDatainDatabase(name, email, message, subject):
-    client = pymongo.MongoClient()
-    db = client.ContactEnquiry
-    db.sites.insert({
+    #client = pymongo.MongoClient()
+    ContactEnquiry = db.ContactEnquiry
+    ContactEnquiry.sites.insert({
         "Name":name,
         "email":email,
         "message":message,
@@ -113,8 +116,8 @@ def insertDatainDatabase(name, email, message, subject):
 
 
 def appointment_report():
-    client = pymongo.MongoClient()
-    db = client.Appointment
+    #client = pymongo.MongoClient()
+    #db = client.Appointment
     print(time.strftime("%A, %d. %B %Y %I:%M:%S %p"))
 
 scheduler = BackgroundScheduler()
@@ -129,5 +132,5 @@ scheduler.add_job(
 atexit.register(lambda: scheduler.shutdown())
 
 if __name__ == '__main__':
-    app.run(debug=True, use_debugger=False, use_reloader=False, host="0.0.0.0")
+    app.run(debug=True, use_debugger=False, use_reloader=False)
 
