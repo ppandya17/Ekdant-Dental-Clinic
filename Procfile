@@ -1,1 +1,1 @@
-web: python pycharm.py
+web: python pycharm.py --port=$PORT
