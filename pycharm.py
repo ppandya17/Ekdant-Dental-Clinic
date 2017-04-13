@@ -115,13 +115,6 @@ def insertDatainDatabase(name, email, message, subject):
 def appointment_report():
     client = pymongo.MongoClient()
     db = client.Appointment
-    db.sites.insert({
-        "Name": Name,
-        "phone": phone,
-        "message": message,
-        "date": date,
-        "time": time
-    })
     print(time.strftime("%A, %d. %B %Y %I:%M:%S %p"))
 
 scheduler = BackgroundScheduler()
@@ -136,5 +129,5 @@ scheduler.add_job(
 atexit.register(lambda: scheduler.shutdown())
 
 if __name__ == '__main__':
-    app.run(debug=True, use_debugger=False, use_reloader=False)
+    app.run(debug=True, use_debugger=False, use_reloader=False, host="0.0.0.0", port=5000)
 
