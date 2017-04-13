@@ -9,7 +9,7 @@ from apscheduler.triggers.interval import IntervalTrigger
 
 app = Flask(__name__)
 
-connection = MongoClient('0.0.0.0',27015)
+connection = MongoClient('localhost',27015)
 db = connection.test
 
 
